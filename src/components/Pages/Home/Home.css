@@ -1,0 +1,112 @@
+.home {
+  height: 90vh;
+  background: linear-gradient(90deg, #a0adcd 0%, #d4dcf0 100%);
+  position: relative; 
+}
+.navbar{
+    direction: ltr;
+    position: absolute;
+    width: 50vw;
+
+position: absolute;
+
+height: 134px;
+left: 0px;
+top: 0px;
+
+}
+
+.textHome {
+  position: absolute;
+  width: 487px;
+  height: 303px;
+  left: 0px;
+  top: 274px;
+  font-family: "IBM Plex Sans Hebrew";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 65px;
+  line-height: 120px;
+  text-align: center;
+  color: #111633;
+}
+
+.flowerText {
+  position: absolute;
+  width: 112.33px;
+  height: 164px;
+  left: 62px;
+  top: 500px;
+}
+
+.ballwhite1 {
+  position: absolute;
+  width: 129.02px;
+  height: 107.55px;
+  left: 13px;
+  top: 736px;
+}
+.ballwhite2 {
+  position: absolute;
+  width: 238.18px;
+  height: 198.55px;
+  left: 256px;
+  top: 656px;
+}
+.makeupImgHome {
+position: absolute;
+width: 506px;
+height: 669px;
+left: 451px;
+top: 216px;
+z-index: 3; 
+}
+
+.goldSphere{
+    /* gold-sphere-oil-bubble-isolated-white-background-golden-glossy-3d-ball-precious-pearl-yellow-serum-collagen-drops-vector-decoration-element-skincare-cosmetic-package_337043-864-removebg-preview 3 */
+
+position: absolute;
+width: 165px;
+height: 165px;
+left: 675px;
+top: 720px;
+z-index: 4; 
+}
+
+
+.goldenFrame{
+position: absolute;
+width: 1071.33px;
+height: 100.94px;
+left: 850px;
+/* top: -9px; */
+
+}
+
+
+.container-img{
+position: relative;
+    width: 600px;
+    height: 400px;
+
+
+}
+.Ellipse{
+/* Ellipse 1 */
+position: absolute;
+width: 870px;
+height: 930px;
+z-index: 1;
+
+
+}
+.tajuHome{
+/* Ellipse 1 */
+position: absolute;
+width: 870px;
+height: 930px;
+
+top: -2px;
+z-index: 2; 
+
+}

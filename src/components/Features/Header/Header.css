@@ -1,0 +1,77 @@
+.header{
+    margin: 0;
+    direction: ltr;
+    background: linear-gradient(90deg, #A0ADCD 0%, #D4DCF0 100%);
+}
+
+.navbar {
+    position: absolute;
+    width: 50vw;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: transparent; /* רקע שקוף */
+}
+
+.navbar-logo {
+    /* font-size: 24px;
+    font-weight: bold;
+    color: #001f54;
+    font-family: 'Cursive', sans-serif; */
+    font-weight: bold;
+    font-family: 'Praise';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 43px;
+}
+
+
+/* position: absolute;
+width: 107px;
+height: 17px;
+left: 714px;
+top: 78px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 275;
+font-size: 24px;
+line-height: 36px; */
+
+/* leading-trim: both;
+text-edge: cap;
+
+color: #000000; */
+
+
+.navbar-links {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 448;
+    font-size: 24px;
+    line-height: 36px;
+
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #001f54; /* צבע הקישורים */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #575757; /* צבע בעת מעבר עכבר */
+}
