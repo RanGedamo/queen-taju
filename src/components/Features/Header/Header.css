@@ -1,77 +1,94 @@
-.header{
+/* עיצוב בסיסי */
+.header {
     margin: 0;
     direction: ltr;
     background: linear-gradient(90deg, #A0ADCD 0%, #D4DCF0 100%);
-}
-
-.navbar {
-    position: absolute;
-    width: 50vw;
-    top: 0;
+  }
+  
+  .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* כל האלמנטים צמודים לשמאל */
     align-items: center;
     padding: 20px 30px;
-    background-color: transparent; /* רקע שקוף */
-}
-
-.navbar-logo {
-    /* font-size: 24px;
-    font-weight: bold;
-    color: #001f54;
-    font-family: 'Cursive', sans-serif; */
+    position: relative;
+    width: 100%;
+  }
+  
+  .navbar-logo {
     font-weight: bold;
     font-family: 'Praise';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-}
-
-
-/* position: absolute;
-width: 107px;
-height: 17px;
-left: 714px;
-top: 78px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 275;
-font-size: 24px;
-line-height: 36px; */
-
-/* leading-trim: both;
-text-edge: cap;
-
-color: #000000; */
-
-
-.navbar-links {
+    font-size: 36px;
+    width: 30vw;
+    line-height: 43px;
+    margin-right: 50px; /* רווח בין הלוגו לקישורים */
+  }
+  
+  .navbar-links {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 448;
     font-size: 24px;
     line-height: 36px;
-
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 50px; /* רווח בין הקישורים */
     margin: 0;
     padding: 0;
-}
-
-.navbar-links li {
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-links li {
     display: inline;
-}
-
-.navbar-links a {
+  }
+  
+  .navbar-links a {
     text-decoration: none;
-    color: #001f54; /* צבע הקישורים */
+    color: #001f54;
     font-size: 16px;
     transition: color 0.3s;
-}
-
-.navbar-links a:hover {
-    color: #575757; /* צבע בעת מעבר עכבר */
-}
+  }
+  
+  .navbar-links a:hover {
+    color: #575757;
+  }
+  
+  /* כפתור המבורגר */
+  .hamburger-button {
+    display: none; /* מוסתר במסכים גדולים */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    margin-left: auto; /* ממקם אותו בסוף השורה */
+  }
+  
+  /* התאמה למסכים קטנים */
+  @media (max-width: 1250px) {
+    .navbar {
+      justify-content: space-between; /* יישור מחדש למסכים קטנים */
+    }
+  
+    .navbar-links {
+      display: none; /* הסתרת התפריט */
+      flex-direction: column; /* תפריט אנכי */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-links.open {
+      display: flex; /* הצגת התפריט כאשר הוא פתוח */
+      z-index: 3;
+    }
+  
+    .hamburger-button {
+      display: block; /* הצגת כפתור המבורגר במסכים קטנים */
+    }
+  }
+  

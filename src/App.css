@@ -1,18 +1,27 @@
-.App{
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-.main{
-  width: 100%;
-  height: 90vh;
-}
-.header{
-  width: 100%;
-  height: 10vh;
-}
-.footer{
+.App {
+  height: 100%; /* שומר על גובה מלא */
+  width: 100%; /* רוחב מלא */
+  margin: 0; /* מסיר ריווחים חיצוניים */
   display: flex;
-  width: 100%;
-  height: 10vw;
+  flex-direction: column; /* מבנה עמודה: header, main, footer */
+}
+
+.header {
+  width: 100%; /* רוחב מלא */
+  height: 10vh; /* גובה מותאם לפי גובה מסך */
+  background-color: #f5f5f5; /* צבע רקע מותאם */
+}
+
+.main {
+  width: 100%; /* רוחב מלא */
+  flex: 1; /* לוקח את כל השטח הפנוי בין ה-header ל-footer */
+}
+
+.footer {
+  display: flex;
+  align-items: center; /* מיקום אנכי של תוכן */
+  justify-content: center; /* מיקום אופקי של תוכן */
+  width: 100%; /* רוחב מלא */
+  height: 10vh; /* התאמה לגובה */
+  background-color: #e0e0e0; /* צבע רקע מותאם */
 }
