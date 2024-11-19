@@ -34,7 +34,9 @@ function Gallery({ carouselState }) {
 
   async function fetchMedia(maxPages = 10) {
     let allMedia = [];
-    let url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type&access_token=${process.env.REACT_APP_IG_ACCESS_TOKEN}`;
+    const token = window._env_.REACT_APP_IG_ACCESS_TOKEN;
+
+    let url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type&access_token=${token}`;
     let pageCount = 0;
 
     while (url && pageCount < maxPages) {
