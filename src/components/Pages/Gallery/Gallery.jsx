@@ -34,9 +34,7 @@ function Gallery({ carouselState }) {
 
   async function fetchMedia(maxPages = 10) {
     let allMedia = [];
-    const token = window._env_.REACT_APP_IG_ACCESS_TOKEN;
-
-    let url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type&access_token=${token}`;
+    let url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type&access_token=${window._env_.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`;
     let pageCount = 0;
 
     while (url && pageCount < maxPages) {
@@ -93,20 +91,20 @@ function Gallery({ carouselState }) {
         <h2 style={{ textAlign: "center" }}>תמונות</h2>
         {loading ? (
           <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/046/853/016/non_2x/instagram-logo-icon-transparent-background-free-png.png"
-            style={{ width: "100px" }}
-            alt=""
-          />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" style={{ width: "100px",textAlign: "center", alignItems: "center" }}/>
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/046/853/016/non_2x/instagram-logo-icon-transparent-background-free-png.png"
+              style={{ width: "100px" }}
+              alt=""
+            />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" style={{ width: "100px",textAlign: "center", alignItems: "center" }}/>
 
-        </div>
+          </div>
         ) : (
           <Carousel
             responsive={responsive}
