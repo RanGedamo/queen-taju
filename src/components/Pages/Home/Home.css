@@ -3,6 +3,7 @@
   height: 90vh;
   background: linear-gradient(90deg, #a0adcd 0%, #d4dcf0 100%);
   position: relative;
+  overflow: hidden; 
 }
 
 .textHome {

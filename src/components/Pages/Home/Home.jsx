@@ -1,5 +1,5 @@
 import "./Home.css";
-import React from "react";
+
 import flower from "./Home-Img/flower.svg"; // מסלול לקובץ
 import ballwhite1 from "./Home-Img/ball-white-1.svg";
 import ballwhite2 from "./Home-Img/ball-white-2.svg";
@@ -9,10 +9,18 @@ import goldenFrame from "./Home-Img/golden-round-frame.svg";
 import Ellipse from "./Home-Img/Ellipse.svg";
 import tajuHome from "./Home-Img/taju-home.svg";
 
-function Home() {
+
+function Home({ carouselState }) {
+
+  
+
+
+
+
+
   return (
     <div className="home">
-      <div className="textHome">
+       <div className="textHome">
         <p>כל מה שאת צריכה זה קצת <br /> טגו</p>
       </div>
 
@@ -35,10 +43,11 @@ function Home() {
         <div className="tajuHome">
           <img src={tajuHome} alt="Taju Home" />
         </div>
-      </div>
+      </div> 
+
+
     </div>
   );
 }
 
 export default Home;
-

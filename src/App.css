@@ -12,10 +12,6 @@
   background-color: #f5f5f5; /* צבע רקע מותאם */
 }
 
-.main {
-  width: 100%; /* רוחב מלא */
-  flex: 1; /* לוקח את כל השטח הפנוי בין ה-header ל-footer */
-}
 
 .footer {
   display: flex;

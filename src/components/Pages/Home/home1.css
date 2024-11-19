@@ -1,0 +1,124 @@
+/* עיצוב בסיסי */
+.home {
+    height: 90vh;
+    background: linear-gradient(90deg, #a0adcd 0%, #d4dcf0 100%);
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .textHome {
+    position: absolute;
+    width: 487px;
+    height: 303px;
+    left: 0px;
+    top: 274px;
+    font-family: "IBM Plex Sans Hebrew";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 65px;
+    line-height: 120px;
+    text-align: center;
+    color: #111633;
+  }
+  
+  .flowerText {
+    position: absolute;
+    width: 112.33px;
+    height: 164px;
+    left: 62px;
+    top: 500px;
+  }
+  
+  .makeupImgHome {
+    position: absolute;
+    width: 506px;
+    height: 669px;
+    left: 451px;
+    top: 216px;
+    z-index: 3;
+  }
+  
+  .goldSphere {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    left: 675px;
+    top: 720px;
+    z-index: 4;
+  }
+  
+  .container-img {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+  
+  .Ellipse {
+    position: absolute;
+    width: 870px;
+    height: 930px;
+    z-index: 1;
+  }
+  
+  .tajuHome {
+    position: absolute;
+    width: 870px;
+    height: 930px;
+    top: -2px;
+    z-index: 2;
+  }
+  
+  /* מדיה קוורי למסכים קטנים בלבד */
+  @media (max-width: 1250px) {
+    .home {
+      height: auto; /* גובה דינמי למסכים קטנים */
+      padding: 10px; /* מרווח פנימי */
+      display: flex; /* מסדר תוכן בצורה גמישה */
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden; /* מניעת גלילה מיותרת */
+    }
+  
+    .textHome {
+      position: relative; /* מיקום דינמי במקום מוחלט */
+      width: auto; /* התאמה לרוחב מסך קטן */
+      font-size: 40px; /* צמצום גודל הטקסט */
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: 20px; /* ריווח תחתון */
+    }
+  
+    .flowerText img {
+      width: 80px; /* צמצום גודל התמונה */
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    .makeupImgHome {
+      position: relative;
+      width: 90%; /* התאמה לרוחב מסך קטן */
+      max-width: 300px;
+      height: auto;
+      margin: 20px auto; /* ריווח מעל ומתחת */
+    }
+  
+    .goldSphere img {
+      width: 80px; /* גודל מופחת */
+      height: auto;
+    }
+  
+    .container-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; /* עטיפת האלמנטים */
+      gap: 10px; /* רווחים בין האלמנטים */
+    }
+  
+    .Ellipse img,
+    .tajuHome img {
+      width: 200px; /* צמצום גודל האליפסה */
+      height: auto;
+    }
+  }
+  
