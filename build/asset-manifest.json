@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0ed944d.css",
-    "main.js": "/static/js/main.cae0c006.js",
+    "main.js": "/static/js/main.42cf655e.js",
     "static/js/453.14e3f43a.chunk.js": "/static/js/453.14e3f43a.chunk.js",
     "static/media/makeup-image-home.svg": "/static/media/makeup-image-home.f236b20eb5c8c61b497d66b54a45357a.svg",
     "static/media/taju-home.svg": "/static/media/taju-home.4ae1c0e77b494df4a564a425bfed97e0.svg",
@@ -17,11 +17,11 @@
     "index.html": "/index.html",
     "static/media/Ellipse.svg": "/static/media/Ellipse.af34df8732a6bd357ba4c4af6a328fc1.svg",
     "main.a0ed944d.css.map": "/static/css/main.a0ed944d.css.map",
-    "main.cae0c006.js.map": "/static/js/main.cae0c006.js.map",
+    "main.42cf655e.js.map": "/static/js/main.42cf655e.js.map",
     "453.14e3f43a.chunk.js.map": "/static/js/453.14e3f43a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0ed944d.css",
-    "static/js/main.cae0c006.js"
+    "static/js/main.42cf655e.js"
   ]
 }
